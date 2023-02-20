@@ -1,3 +1,36 @@
+### Project Name:  Comic Cohort 🦸
+------------------
+### A Comic Book e-commerce shopping site
+
+### User Stories
+
+As a user, I want to be able to search and filter comic books by author and price, so that I can easily find the comics I am interested in.
+As a user, I want to be able to view the homepage with a list of comic books, so that I can see what is available.
+As a user, I want to be able to view individual product pages with quantity, colour and variant pickers, so that I can choose the options I want before adding the item to my basket.
+As a user, I want to be able to add items to my basket, so that I can keep track of what I want to purchase.
+As a user, I want my basket contents to be persisted for future visits, so that I can come back to the site later and continue where I left off.
+As a user, I want to be able to filter products by category, so that I can find the type of comic books I am interested in.
+As a user, I want to be able to sort products by price, so that I can find the best deals.
+As a user, I want to be able to perform end-to-end tests, so that I can be confident that the site is working as intended.
+Acceptance Criteria
+
+The site should be server-rendered using Next.js.
+The homepage should display a list of comic books available for sale.
+Each comic book should have its own individual product page, containing quantity, colour and variant pickers.
+All data should be stored in a SQLite database.
+The site should include an "Add to Basket" button on each product page.
+The site should include a basket page that shows all saved items.
+Basket contents should be persisted for future visits using local storage.
+The site should include a way for users to filter products by category.
+The site should include a way for users to sort products by price.
+The site should include end-to-end tests to ensure that all functionality is working as expected.
+Stretch Criteria
+
+Allow users to leave reviews and ratings on products.
+Implement authentication and authorization to restrict access to certain pages or functionality.
+Allow users to view their purchase history and track the status of current orders.
+Implement a search bar to allow users to search for specific comics or authors.
+Implement a recommendation system that suggests products based on the user's purchase history or browsing behaviour.
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
