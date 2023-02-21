@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Card from "../components/card.js";
 
 const Homepage = () => {
   const companyTitle = "Crazy for Comics!";
@@ -11,7 +12,9 @@ const Homepage = () => {
       </header>
       <main>
         <section className="grid-container">
-          <div className="card-wrapper">
+          <Card></Card>
+
+          {/* <div className="card-wrapper">
             <h2 className="card-title">Alien</h2>
             <p className="card-author">Ridley Scott</p>
             <Image
@@ -54,7 +57,7 @@ const Homepage = () => {
               height={150}
               width={150}
             />
-          </div>
+          </div> */}
         </section>
       </main>
 
