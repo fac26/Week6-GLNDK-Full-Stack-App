@@ -19,7 +19,7 @@ CREATE TABLE IF NOT EXISTS comics (
   comic_desc TEXT, 
   image_path VARCHAR,
   price DECIMAL(10,2),
-  publisher_id INTEGER REFERENCES publishers(id) ,
+  publisher_id INTEGER REFERENCES publishers(id),
   published_month TEXT,
   published_year INTEGER,
   genre TEXT REFERENCES genre (id)
