@@ -36,5 +36,5 @@ const get_comic_by_ID = db.prepare(/*sql*/ `SELECT
   FROM comics WHERE id = ?`);
 
 export function getComicByID(id) {
-  return get_comic.get(id);
+  return get_comic_by_ID.get(id);
 }
