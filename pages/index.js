@@ -13,7 +13,7 @@ const Homepage = () => {
         <section>
           <div>
             <h2>Alien</h2>
-            <p>Ridley Scott</p>
+            <p className="author">Ridley Scott</p>
             <Image
               src="/../public/images/01.jpg"
               alt="Picture of the author"
