@@ -1,7 +1,10 @@
-h1 {
-  color: red;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-items: center;
 }
 
-.author {
-  color: blue;
+.company-title {
+  text-align: center;
 }
+

@@ -6,15 +6,49 @@ const Homepage = () => {
 
   return (
     <>
-      <header>
+      <header className="company-title">
         <h1>{companyTitle}</h1>
       </header>
       <main>
-        <section>
-          <div>
-            <h2>Alien</h2>
-            <p className="author">Ridley Scott</p>
+        <section className="grid-container">
+          <div className="card-wrapper">
+            <h2 className="card-title">Alien</h2>
+            <p className="card-author">Ridley Scott</p>
             <Image
+              className="card-image"
+              src="/../public/images/01.jpg"
+              alt="Picture of the author"
+              height={150}
+              width={150}
+            />
+          </div>
+          <div className="card-wrapper">
+            <h2 className="card-title">Alien</h2>
+            <p className="card-author">Ridley Scott</p>
+            <Image
+              className="card-image"
+              src="/../public/images/01.jpg"
+              alt="Picture of the author"
+              height={150}
+              width={150}
+            />
+          </div>
+          <div className="card-wrapper">
+            <h2 className="card-title">Alien</h2>
+            <p className="card-author">Ridley Scott</p>
+            <Image
+              className="card-image"
+              src="/../public/images/01.jpg"
+              alt="Picture of the author"
+              height={150}
+              width={150}
+            />
+          </div>
+          <div className="card-wrapper">
+            <h2 className="card-title">Alien</h2>
+            <p className="card-author">Ridley Scott</p>
+            <Image
+              className="card-image"
               src="/../public/images/01.jpg"
               alt="Picture of the author"
               height={150}
