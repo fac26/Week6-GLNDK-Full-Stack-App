@@ -21,8 +21,10 @@ export function getComics() {
   return get_all_Comics.all();
 }
 
-const get_comic_by_ID = db.prepare(/*sql*/ `SELECT * from comics WHERE id = ?`);
+const get_comics = db.prepare(
+  /*sql*/ `SELECT id,title,issue, image_path, price, publisher_id, published_month, published_year, genre from comics WHERE id = ?`
+);
 
-export function getComicsByID(id) {
-  return get_comic_by_ID.get(id);
+export function getComics(id) {
+  return get_comics.get(id);
 }
