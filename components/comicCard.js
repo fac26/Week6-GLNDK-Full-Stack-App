@@ -16,14 +16,12 @@ export default function ComicCard({ comicsData }) {
   //     genre,
   //   } = comicsData[0];
 
-  console.log(comicsData);
-
   return (
     <>
       {comicsData.map((comic) => (
         <div className="comic-container" key={comic.id}>
           <Link href={`/comics/${comic.id}`}>
-            <Image src={`${comic.image_path}`} width={300} height={500} />
+            <Image src={comic.image_path} width={300} height={500} />
           </Link>
           <p className="title">{comic.title}</p>
           <p className="issue">{`#${comic.issue}`}</p>
