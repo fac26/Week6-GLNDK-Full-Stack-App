@@ -37,6 +37,7 @@ export default function postComicBook({ comicBookData }) {
       <header>
         <h1>{comicBookData.title}</h1>
       </header>
+      <ComicBookPage comicBookData={comicBookData} />
       <BackToHome />
     </>
   );

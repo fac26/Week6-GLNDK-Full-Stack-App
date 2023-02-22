@@ -21,6 +21,8 @@ export function getAllComics() {
   return get_all_Comics.all();
 }
 
+console.log(getAllComics());
+
 //Gets one single commic by ID
 const get_comic_by_ID = db.prepare(/*sql*/ `SELECT 
   id,
