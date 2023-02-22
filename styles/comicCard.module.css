@@ -1,0 +1,34 @@
+.comicContainer {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 20px;
+  transition: 0.5s ease-in-out;
+  text-align: center;
+}
+
+.comicContainer:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transform: scale(1.05);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 16pt;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.button {
+  width: 250px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+}
+
+.button:hover {
+  color: black;
+  background-color: orange;
+}
