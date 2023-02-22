@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import AddToCart from 'components/addToCart.js';
 //import { useState } from 'react';
 //import styles from '../styles/global';
 
@@ -32,17 +33,13 @@ export default function ComicCard({ comicsData }) {
           </p>
           <p className="genre">{comic.genre}</p>
           <p className="price">{comic.price}</p>
-          <button className="buyBtn">Add to Cart</button>
+          <AddToCart></AddToCart>
         </div>
       ))}
     </>
   );
 }
 
-export const buyBtn = (props) => {
-  return (
-    <button onClick={props.onClick}>
-      {props.text}
-    </button>
-  );
-}
+export const BuyBtn = (props) => {
+  return <button onClick={props.onClick}>{props.text}</button>;
+};
