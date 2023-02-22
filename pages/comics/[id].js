@@ -28,8 +28,10 @@ export async function getStaticPaths() {
   };
 }
 
-// export default function postComicBook() {
-//   return <div>hello</div>;
+// export default function postComicBook({comicBookData}) {
+//   return (
+//     <ComicBookPage comicBookData={comicBookData}/>
+//   )
 // }
 
 export default function postComicBook({comicBookData }) {
@@ -45,8 +47,10 @@ export default function postComicBook({comicBookData }) {
                 {comicBookData.title}
             </h1>
         </header>
+        <ComicBookPage comicBookData={comicBookData}/>
         <BackToHome/>
       </>
     );
 }
+
 
