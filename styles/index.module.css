@@ -1,0 +1,30 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-items: center;
+  padding: 1rem;
+  gap: 2rem;
+  margin-top: 20px;
+}
+
+.companyTitle {
+  text-align: center;
+  font-size: 40pt;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  border-bottom: solid 5px black;
+}
+
+.background {
+  background: #009fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to top,
+    #ec2f4b,
+    #009fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to top,
+    #ec2f4b,
+    #009fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

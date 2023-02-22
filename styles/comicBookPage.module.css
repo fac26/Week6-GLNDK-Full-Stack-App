@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  max-width: 100%;
+  background-color: lightblue;
+}
+
+.imageContainer {
+  width: 375px;
+}
+
+.comicInfo {
+  width: 800px;
+  margin-top: 50px;
+}

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 //import { useState } from 'react';
-//import styles from '../styles/global';
+import style from '../styles/comicCard.module.css';
 
 export default function ComicCard({ comicsData }) {
   //   const {
@@ -19,19 +19,24 @@ export default function ComicCard({ comicsData }) {
   return (
     <>
       {comicsData.map((comic) => (
-        <div className="comic-container" key={comic.id}>
+        <div className={style.comicContainer} key={comic.id}>
           <Link href={`/comics/${comic.id}`}>
-            <Image src={comic.image_path} width={300} height={500} />
+            <Image src={comic.image_path} width={300} height={425} />
           </Link>
-          <p className="title">{comic.title}</p>
-          <p className="issue">{`#${comic.issue}`}</p>
+
+          <p className={style.title}>
+            {comic.title} {`#${comic.issue}`}
+          </p>
+
           <p className="publisher">{comic.publisher_name}</p>
           <p className="published">
             {`${comic.published_month} ${comic.published_year}`}
           </p>
           <p className="genre">{comic.genre_name}</p>
-          <p className="price">{comic.price}</p>
-          <button className="buyBtn">Add to Cart</button>
+
+          <p className={style.price}>{comic.PRICE}</p>
+          <button className={style.button}>Add to Cart</button>
+
         </div>
       ))}
     </>
