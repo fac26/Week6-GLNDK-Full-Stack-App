@@ -1,7 +1,7 @@
 import ComicBookPage from "components/comicBookPage";
 import BackToHome from "components/backToHome";
 import { getAllComics, getComicByID } from "database/model";
-import Head from 'next/head';
+import Head from "next/head";
 
 export async function getStaticProps({ params }) {
   const comicBookData = await getComicByID(params.id);
@@ -28,25 +28,16 @@ export async function getStaticPaths() {
   };
 }
 
-// export default function postComicBook() {
-//   return <div>hello</div>;
-// }
-
-export default function postComicBook({comicBookData }) {
-    return (
-      <>
-        <Head>
-            <title>
-                {comicBookData.title}
-            </title>
-        </Head>
-        <header>
-            <h1>
-                {comicBookData.title}
-            </h1>
-        </header>
-        <BackToHome/>
-      </>
-    );
+export default function postComicBook({ comicBookData }) {
+  return (
+    <>
+      <Head>
+        <title>{comicBookData.title}</title>
+      </Head>
+      <header>
+        <h1>{comicBookData.title}</h1>
+      </header>
+      <BackToHome />
+    </>
+  );
 }
-
