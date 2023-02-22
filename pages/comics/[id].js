@@ -1,7 +1,7 @@
-import ComicBookPage from "components/comicBookPage";
-import BackToHome from "components/backToHome";
-import { getAllComics, getComicByID } from "database/model";
-import Head from "next/head";
+import ComicBookPage from 'components/comicBookPage';
+import BackToHome from 'components/backToHome';
+import { getAllComics, getComicByID } from 'database/model';
+import Head from 'next/head';
 
 export async function getStaticProps({ params }) {
   const comicBookData = await getComicByID(params.id);
