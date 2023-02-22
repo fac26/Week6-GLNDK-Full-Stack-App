@@ -1,41 +1,46 @@
-import db from "./db.js";
+import db from './db.js';
 
 //Gets all comics from the database
 const get_all_Comics = db.prepare(
   /*sql*/
   `SELECT
-  id,
-  title,
-  issue,
-  image_path,
-  FORMAT ('£%.2f', price) AS PRICE,
-  publisher_id,
-  published_month,
-  published_year,
-  genre
+  comics.title,
+  comics.id,
+  comics.issue,
+  comics.image_path,
+  FORMAT ('£%.2f', comics.price) AS PRICE, -- soooo silly
+  comics.publisher_id,
+  comics.published_month,
+  comics.published_year,
+  genres.name AS genre_name,
+  publishers.name AS publisher_name
 FROM
-comics`
+comics
+JOIN genres ON comics.genre = genres.id -- changed from WHERE to ON
+JOIN publishers ON comics.publisher_id = publishers.id`
 );
 
 export function getAllComics() {
   return get_all_Comics.all();
 }
 
-console.log(getAllComics());
-
 //Gets one single commic by ID
 const get_comic_by_ID = db.prepare(/*sql*/ `SELECT 
-  id,
-  title,
-  issue,
-  comic_desc, 
-  image_path, 
-  FORMAT ('£%.2f', price) AS PRICE, 
-  publisher_id, 
-  published_month, 
-  published_year, 
-  genre 
-  FROM comics WHERE id = ?`);
+  comics.id,
+  comics.title,
+  comics.issue,
+  comics.comic_desc, 
+  comics.image_path, 
+  FORMAT ('£%.2f', comics.price) AS PRICE, 
+  comics.publisher_id, 
+  comics.published_month, 
+  comics.published_year, 
+  genres.name AS genre_name,
+  publishers.name AS publisher_name
+  FROM comics 
+  JOIN genres ON comics.genre = genres.id -- changed from WHERE to ON
+  JOIN publishers ON comics.publisher_id = publishers.id
+  WHERE id = ?`);
 
 export function getComicByID(id) {
   return get_comic_by_ID.get(id);
