@@ -33,7 +33,7 @@ export default function ComicCard({ comicsData }) {
           </p>
           <p className="genre">{comic.genre}</p>
           <p className="price">{comic.price}</p>
-          <AddToCart></AddToCart>
+          <AddToCart comic={comic}></AddToCart>
         </div>
       ))}
     </>

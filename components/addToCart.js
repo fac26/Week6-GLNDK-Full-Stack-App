@@ -1,8 +1,19 @@
 import React, { useState } from 'react';
 import { BuyBtn } from './comicCard';
 
-const AddToCart = (comic) => {
+const AddToCart = ({ comic }) => {
   const [quantity, setQuantity] = useState([]);
+  // [1] Add comic to useState here
+  const [comic, setComic] = useState({});
+
+  useEffect(() => {
+    let local = JSON.parse(localStorage.setItem('basket', comic))
+      ? JSON.parse(localStorage.setItem('basket')).length
+      : 0;
+    setItemsInBasket(local);
+  }, []);
+
+  // [2] Add useEffect to trigger on change to comic
 
   const handleQuantityChange = (event) => {
     setQuantity(event.target.value);
@@ -12,10 +23,12 @@ const AddToCart = (comic) => {
     const item = {
       id: comic.id,
       title: comic.title,
-      quantity: parseInt(quantity),
+      quantity: 1,
       price: comic.price,
     };
-    comic.addtoCart(item);
+
+    // [3] setComic to the comic data above
+    // comic.addtoCart(item);
   };
   return (
     <div>
