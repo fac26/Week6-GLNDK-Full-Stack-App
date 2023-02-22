@@ -31,7 +31,7 @@ export default function Homepage({ comicsData }) {
         setPublisher={setPublisher}
       />
       <div className={style.gridContainer}>
-        <ComicCard comicsData={comicsData} />
+        <ComicCard comicsData={comicsData} publisher={publisher} />
       </div>
       <footer>{companyFooter}</footer>
     </div>
