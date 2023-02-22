@@ -40,7 +40,7 @@ const get_comic_by_ID = db.prepare(/*sql*/ `SELECT
   FROM comics 
   JOIN genres ON comics.genre = genres.id -- changed from WHERE to ON
   JOIN publishers ON comics.publisher_id = publishers.id
-  WHERE id = ?`);
+  WHERE comics.id = ?`);
 
 export function getComicByID(id) {
   return get_comic_by_ID.get(id);
