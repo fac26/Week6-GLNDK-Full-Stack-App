@@ -4,6 +4,7 @@ import ComicCard from '../components/comicCard';
 import { getAllComics } from 'database/model';
 import { useState } from 'react';
 
+
 export async function getServerSideProps() {
   let comicsData = getAllComics();
   return {
@@ -21,7 +22,8 @@ export default function Homepage({ comicsData }) {
       <header className="company-title">
         <h1>{companyTitle}</h1>
       </header>
-      <ComicCard comicsData={comicsData} />
+      <div className='comic-grid'>
+        <ComicCard comicsData={comicsData} /></div>
       <footer>{companyFooter}</footer>
     </>
   );

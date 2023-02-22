@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
 //import { useState } from 'react';
 //import styles from '../styles/global';
 
@@ -35,5 +36,13 @@ export default function ComicCard({ comicsData }) {
         </div>
       ))}
     </>
+  );
+}
+
+export const buyBtn = (props) => {
+  return (
+    <button onClick={props.onClick}>
+      {props.text}
+    </button>
   );
 }
