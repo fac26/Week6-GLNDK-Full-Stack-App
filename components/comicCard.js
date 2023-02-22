@@ -25,11 +25,11 @@ export default function ComicCard({ comicsData }) {
           </Link>
           <p className="title">{comic.title}</p>
           <p className="issue">{`#${comic.issue}`}</p>
-          <p className="publisher">{comic.publisher_id}</p>
+          <p className="publisher">{comic.publisher_name}</p>
           <p className="published">
             {`${comic.published_month} ${comic.published_year}`}
           </p>
-          <p className="genre">{comic.genre}</p>
+          <p className="genre">{comic.genre_name}</p>
           <p className="price">{comic.price}</p>
           <button className="buyBtn">Add to Cart</button>
         </div>
