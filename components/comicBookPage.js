@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
-import { useState } from 'react';
 import styles from '../styles/comicBookPage.module.css';
 
 export default function ComicBookPage({ comicBookData }) {

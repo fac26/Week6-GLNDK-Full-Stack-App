@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import ComicCard from '../components/comicCard';
-import Filter from '../components/filter';
+import ComicCard from '../components/ComicCards';
+import Filter from '../components/Filter';
 import { getAllComics } from 'database/model';
 import { useState } from 'react';
 import style from '../styles/index.module.css';

@@ -1,5 +1,5 @@
-import ComicBookPage from 'components/comicBookPage';
-import BackToHome from 'components/backToHome';
+import ComicBookPage from 'components/ComicBookPage';
+import BackToHome from 'components/BackToHome';
 import { getAllComics, getComicByID } from 'database/model';
 import Head from 'next/head';
 
