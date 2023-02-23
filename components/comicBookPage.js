@@ -2,7 +2,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import styles from '../styles/comicBookPage.module.css';
-//import button from "..components/...."
 
 export default function ComicBookPage({ comicBookData }) {
   const { title, issue, image_path, comic_desc, genre_name, PRICE } =
@@ -30,5 +29,3 @@ export default function ComicBookPage({ comicBookData }) {
     </section>
   );
 }
-
-//         <Image src={image_path} alt={title} width={300} height={300} />
