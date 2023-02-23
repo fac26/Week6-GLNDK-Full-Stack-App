@@ -42,7 +42,12 @@ export default function ComicCard({ comicsData, publisher }) {
         .map((comic) => (
           <div className={style.comicContainer} key={comic.id}>
             <Link href={`/comics/${comic.id}`}>
-              <Image src={comic.image_path} width={300} height={425} />
+              <Image
+                src={comic.image_path}
+                width={300}
+                height={425}
+                alt={comic.title}
+              />
             </Link>
 
             <p className={style.title}>
