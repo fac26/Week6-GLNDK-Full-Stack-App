@@ -28,3 +28,25 @@
     #009fff
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+@media screen and (max-width: 1200px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    margin-top: 20px;
+  }
+}
