@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-//import { useState } from 'react';
 import style from '../styles/comicCard.module.css';
 
 export default function ComicCard({ comicsData, publisher }) {
