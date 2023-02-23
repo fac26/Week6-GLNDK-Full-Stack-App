@@ -2,6 +2,7 @@
   display: flex;
   max-width: 100%;
   background-color: lightblue;
+  margin-bottom: 50px;
 }
 
 .imageContainer {

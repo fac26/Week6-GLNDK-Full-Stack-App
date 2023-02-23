@@ -8,10 +8,10 @@ const Filter = (props) => {
   return (
     <form
       onSubmit={handleSubmit((data) => {
-        console.log(props.comicsData);
-        console.log(data.publisher);
-        console.log(props.comicsData[0].publisher_name === data.publisher);
-        console.log('set filter:', data);
+        // console.log(props.comicsData);
+        // console.log(data.publisher);
+        // console.log(props.comicsData[0].publisher_name === data.publisher);
+        // console.log('set filter:', data);
         setPublisher(data);
       })}
     >
