@@ -2,6 +2,22 @@
 ------------------
 ### A Comic Book e-commerce shopping site
 
+#### Things that don't work yet.
+
+**- Filter by category function NOT working yet.** 
+
+**- Add to cart function NOT working yet.**
+
+#### Getting Started
+
+1. `cd` into the directory you want to save the repo into.
+2. Use the command `git clone` followed by https://github.com/fac26/Week6-GLNDK-Full-Stack-App.git to clone the repo.
+3. Use the `npm install` command to install all dependancies on your local machine.
+4. Use the `npm run seed` command to seed the database with example data.
+5. Run the server by using `npm run dev` command.
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
 #### User Stories
 
 - [x] As a user, I want to be able to search and filter comic books by author and price, so that I can easily find the comics I am interested in.
@@ -35,41 +51,11 @@ Stretch Criteria
 * Implement a recommendation system that suggests products based on the user's purchase history or browsing behaviour.
 * This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-#### Getting Started
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
 #### The plan
 
 ![Plan1](https://user-images.githubusercontent.com/101563800/220304854-f58be288-3090-48de-b9b5-bd5f031ef7b3.jpg)
 
 ![Plan2](https://user-images.githubusercontent.com/101563800/220304904-7927d1a5-ea0d-416b-bf8b-597cf05daf32.jpg)
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-#### Deployment on Vercel
-
- To deploy our Next.js app, is we used the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 #### Contributors
 
