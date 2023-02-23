@@ -6,7 +6,6 @@ import { getAllComics } from 'database/model';
 import { useState } from 'react';
 import style from '../styles/index.module.css';
 
-
 export async function getServerSideProps() {
   let comicsData = getAllComics();
   return {
@@ -26,10 +25,6 @@ export default function Homepage({ comicsData }) {
       <header className={style.companyTitle}>
         <h1>{companyTitle}</h1>
       </header>
-<<<<<<< HEAD
-      <div className='comic-grid'>
-        <ComicCard comicsData={comicsData} /></div>
-=======
       <Filter
         comicsData={comicsData}
         publisher={publisher}
@@ -38,7 +33,6 @@ export default function Homepage({ comicsData }) {
       <div className={style.gridContainer}>
         <ComicCard comicsData={comicsData} publisher={publisher} />
       </div>
->>>>>>> 71791b36ccaf5d5af32d516ae306643d931d9f88
       <footer>{companyFooter}</footer>
     </div>
   );
