@@ -4,17 +4,14 @@ import { BuyBtn } from './comicCard';
 const AddToCart = ({ comic }) => {
   const [quantity, setQuantity] = useState([]);
   // [1] Add comic to useState here
-  const [item, setItem] = useState('');
+  const [item, setItem] = useState({});
   let comicItem = {};
   useEffect(() => {
-    // Check if there is basket in localstorage -  get item
-    // if there is a basket = add to it the new item
-    // if no basket = set an item
-    console.log(item);
-    //localStorage.setItem('basket', JSON.stringify(comic));
-    //   ? JSON.parse(localStorage.setItem('basket')).length
-    //   : 0;
+    const storedBasket = localStorage.getItem('basket');
+    const basketItems = storedBasket ? JSON.parse(storedBasket).length : 0;
+    setBasketCount(basketItems);
   }, [item]);
+
 
   // [2] Add useEffect to trigger on change to comic
 
@@ -23,6 +20,7 @@ const AddToCart = ({ comic }) => {
   };
 
   const handleAddToCart = () => {
+    console.log('whatev');
     comicItem = {
       id: comic.id,
       title: comic.title,
@@ -39,7 +37,7 @@ const AddToCart = ({ comic }) => {
     <div>
       {/* <label htmlFor="quantity">Quantity</label>
       <input type="number" value={quantity} onChange={handleQuantityChange} /> */}
-      <BuyBtn onClick={handleAddToCart} text="Add to Cart" />
+      <BuyBtn onClick={handleAddToCart} text="Add to goiblib" />≠≠
     </div>
   );
 };
